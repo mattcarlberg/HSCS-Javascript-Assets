@@ -32,7 +32,7 @@ if(person2.job == "singer"){
 }
 
 //Idea 4 - if/else
-if(person1.age > person1.age){
+if(person1.age > person2.age){
   console.log(`${person1.name} is older than ${person2.name}`)
 }else{
   console.log(`${person2.name} is older than ${person1.name}`)
