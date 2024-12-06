@@ -50,7 +50,7 @@ Add an event listener to an element, which will trigger a function when it is cl
 
 ```javascript
 profilepic.addEventListener("click", runMe)
-  console.log("Profile picture clicked!")
+console.log("Profile picture clicked!")
 ```
 You also need to define what the function does when the click happens.
 
