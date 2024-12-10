@@ -5,8 +5,8 @@ function setup(){
   document.getElementById("2btn").addEventListener("click", numberClicked)
   document.getElementById("3btn").addEventListener("click", numberClicked)
 
-  document.getElementById("sq-btn").addEventListener("click", go_sq)
-  document.getElementById("sqrt-btn").addEventListener("click", go_sqrt)
+  document.getElementById("sq-btn").addEventListener("click", go)
+  document.getElementById("sqrt-btn").addEventListener("click", go)
 
 }
 
@@ -23,18 +23,18 @@ function numberClicked(event){
   document.getElementById("ans-text").innerHTML = output_str
 }
 
-function go_sq(event){
+function go(event){
   let num = Number(output_str)
-  let result = num*num 
+  let result
+  if(event.target.id == "sq-btn"){
+    result = num*num 
+  }
+  if(event.target.id == "sqrt-btn"){
+    result = Math.sqrt(num)
+  }
   output_str = output_str + " = " + result
   document.getElementById("ans-text").innerHTML = output_str
 }
 
-function go_sqrt(event){
-  let num = Number(output_str)
-  let result = Math.sqrt(num) 
-  output_str = output_str + " = " + result
-  document.getElementById("ans-text").innerHTML = output_str
-}
 
 setup()
