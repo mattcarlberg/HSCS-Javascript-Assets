@@ -32,7 +32,7 @@ function go(event){
   if(event.target.id == "sqrt-btn"){
     result = Math.sqrt(num)
   }
-  output_str = output_str + " = " + result
+  output_str = output_str + " -> " + result
   document.getElementById("ans-text").innerHTML = output_str
 }
 
