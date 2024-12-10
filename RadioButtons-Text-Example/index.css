@@ -1,0 +1,14 @@
+.frame{
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.question-box{
+  margin: 30px;
+  background-color:lightblue;
+  padding:20px;
+  
+}
