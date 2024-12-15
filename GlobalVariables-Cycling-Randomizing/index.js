@@ -5,14 +5,14 @@ let count1 = 0
 let count2 = 0 
 let count3 = 1 
 setup()
- 
+
 
 function setup(){
   document.getElementById("add").innerHTML = `The value of count1 is ${count1}`;
   document.getElementById("cycle").innerHTML = `The value of count2 is ${count2}`;
   document.getElementById("flip-flop").innerHTML = `The value of count3 is ${count3}`;
   document.getElementById("random").innerHTML = "Not ready yet"
-  
+
   document.getElementById("add-btn").addEventListener("click", going_up);
   document.getElementById("cycle-btn").addEventListener("click", cycling);
   document.getElementById("flip-flop-btn").addEventListener("click", flip_flopping);
@@ -21,7 +21,7 @@ function setup(){
 
 function going_up(){
   count1 = count1 + 1;
-  document.getElementById("first").innerHTML = `The value of count1 is ${count1}`;
+  document.getElementById("add").innerHTML = `The value of count1 is ${count1}`;
 }
 
 function cycling(){
@@ -29,22 +29,17 @@ function cycling(){
   if(count2 == 5){
     count2 = 0; 
   }
-  document.getElementById("second").innerHTML = `The value of count2 is ${count2}`;
+  document.getElementById("cycle").innerHTML = `The value of count2 is ${count2}`;
 }
 
 function flip_flopping(){
   count3 = count3*-1
-  document.getElementById("third").innerHTML = `The value of count3 is ${count3}`;
+  document.getElementById("flip-flop").innerHTML = `The value of count3 is ${count3}`;
 }
 
 
 function randomizing(){
   let count4 = Randomizer.nextInt(1, 6)
-  document.getElementById("fourth").innerHTML = `The value of count4 is ${count4}`;
+  document.getElementById("random").innerHTML = `The value of count4 is ${count4}`;
 
 }
-
-
-
-
-
