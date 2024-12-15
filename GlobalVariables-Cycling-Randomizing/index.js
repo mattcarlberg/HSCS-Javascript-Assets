@@ -13,13 +13,13 @@ function setup(){
   document.getElementById("flip-flop").innerHTML = `The value of count3 is ${count3}`;
   document.getElementById("random").innerHTML = "Not ready yet"
 
-  document.getElementById("add-btn").addEventListener("click", going_up);
+  document.getElementById("add-btn").addEventListener("click", adding);
   document.getElementById("cycle-btn").addEventListener("click", cycling);
   document.getElementById("flip-flop-btn").addEventListener("click", flip_flopping);
   document.getElementById("random-btn").addEventListener("click", randomizing);
 }
 
-function going_up(){
+function adding(){
   count1 = count1 + 1;
   document.getElementById("add").innerHTML = `The value of count1 is ${count1}`;
 }
