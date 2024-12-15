@@ -1,0 +1,12 @@
+.box{
+  background-color:lightgray;
+  margin: auto;
+  padding:10px;
+  margin-bottom: 50px;
+  width: 50%;
+  text-align:center;
+}
+
+.bg-red{
+  background-color:red;
+}
