@@ -35,7 +35,7 @@ Get an element using the same syntax you use in CSS, and store it in a variable 
 
 Select by element:
 ```javascript
-let profilepic = document.getElementById("bestpic")
+let profilepic = document.querySelector("#bestpic")
 ```
 
 When you're still learning, it's helpful to make sure you got the element you were trying to select by logging it to the console.
@@ -50,7 +50,6 @@ Add an event listener to an element, which will trigger a function when it is cl
 
 ```javascript
 profilepic.addEventListener("click", runMe)
-console.log("Profile picture clicked!")
 ```
 You also need to define what the function does when the click happens.
 
