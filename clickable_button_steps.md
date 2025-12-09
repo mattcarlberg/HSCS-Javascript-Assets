@@ -1,5 +1,5 @@
 
-## 🖱️ Making a Clickable Button in HTML & JavaScript
+## Making a Clickable Button in HTML & JavaScript
 
 
 
@@ -73,14 +73,14 @@ HTML:
 
 Javascript
 ```js
-function setup(){
+function main(){
     let button = document.querySelector('#bhsecq');
     button.addEventListener('click', sayHello);
 }
 function sayHello() {
     alert('Hello, world!');
 }
-setup()
+main();
 ```
 
 
