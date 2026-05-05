@@ -1,24 +1,5 @@
 
 
----
-geometry: margin=0.75in
-fontsize: 12pt
-header-includes:
-  - \usepackage{enumitem}
-  - \setlist{itemsep=8pt}
-  - \usepackage{tcolorbox}
-  - \usepackage{fvextra}
-  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
-      frame=single,
-      framesep=8pt,
-      commandchars=\\\{\},
-      xleftmargin=0.5in,
-      xrightmargin=0.1in
-    }  
-  - \usepackage{needspace}
-  - \AtBeginEnvironment{Highlighting}{\Needspace{6\baselineskip}}
----
-
 Name: ___________________________________
 
 *High School Computer Science*  
@@ -85,7 +66,7 @@ function sayHello() {
 
 <br><br><br>
 
-\newpage
+
 
 ### Full Example (HTML + JS)
 
