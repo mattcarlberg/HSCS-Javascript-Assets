@@ -1,9 +1,35 @@
 
+
+---
+geometry: margin=0.75in
+fontsize: 12pt
+header-includes:
+  - \usepackage{enumitem}
+  - \setlist{itemsep=8pt}
+  - \usepackage{tcolorbox}
+  - \usepackage{fvextra}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+      frame=single,
+      framesep=8pt,
+      commandchars=\\\{\},
+      xleftmargin=0.5in,
+      xrightmargin=0.1in
+    }  
+  - \usepackage{needspace}
+  - \AtBeginEnvironment{Highlighting}{\Needspace{6\baselineskip}}
+---
+
+Name: ___________________________________
+
+*High School Computer Science*  
+*Clickable Buttons*
+
+
 ## Making a Clickable Button in HTML & JavaScript
 
 
 
-### ✅ 1. Put a `<button>` tag in your HTML
+### 1. Put a `<button>` tag in your HTML
 
 ```html
 <button>Click me!</button>
@@ -15,19 +41,19 @@
 <button type="button" class="btn btn-primary">Click Me!</button>
 ```
 
----
 
-### ✅ 2. Give your button an `id` so JavaScript can find it
+
+### 2. Give your button an `id` so JavaScript can find it
 
 ```html
 <button id="bhsecq">Click me!</button>
 ```
 
-> **Why?** The `id` helps JavaScript target this specific button.
+> **Why?** The `id` will allow JavaScript to target this specific button.
 
----
 
-### ✅ 3. In JavaScript, use `querySelector` to get the button
+
+### 3. In JavaScript, use `querySelector` to get the button
 
 ```js
 let button = document.querySelector('#bhsecq');
@@ -35,9 +61,9 @@ let button = document.querySelector('#bhsecq');
 
 > **Note:** The `#` means *look for an id named `bhsecq`.*
 
----
 
-### ✅ 4. Add an event listener to watch for a click
+
+### 4. Add an event listener to watch for a click
 
 ```js
 button.addEventListener('click', sayHello);
@@ -45,9 +71,9 @@ button.addEventListener('click', sayHello);
 
 > This means: "When the button is clicked, run the `sayHello` function."
 
----
 
-### ✅ 5. Define the function to say what happens
+
+### 5. Define the function to say what happens
 
 ```js
 function sayHello() {
@@ -58,7 +84,10 @@ function sayHello() {
 > You can change this to do anything — show a message, change colors, hide things, etc.
 
 <br><br><br>
-### 🧠 Full Example (HTML + JS)
+
+\newpage
+
+### Full Example (HTML + JS)
 
 HTML:
 
